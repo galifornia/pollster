@@ -1,0 +1,77 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Fulano",
+      "votes": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Mengano",
+      "votes": [
+        2
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Fatima",
+      "votes": []
+    }
+  ],
+  "polls": [
+    {
+      "id": 1,
+      "participants": [
+        1,
+        2
+      ],
+      "status": [
+        false,
+        false
+      ],
+      "name": "Quedada en Madrid",
+      "description": "En un lugar de la Mancha de cuyo nombre no quiero acordarme no ha mucho tiempo que vivía un hidalgo de los lanza en astillero, adarga antigua, rocín flaco y galgo corredor."
+    },
+    {
+      "id": 2,
+      "participants": [
+        2,
+        3
+      ],
+      "status": [
+        false,
+        false
+      ],
+      "name": "Fin de semana",
+      "description": "En un lugar de la Mancha de cuyo nombre no quiero acordarme no ha mucho tiempo que vivía un hidalgo de los lanza en astillero, adarga antigua, rocín flaco y galgo corredor."
+    }
+  ],
+  "votes": [
+    {
+      "pollId": 1,
+      "options": [
+        0,
+        2
+      ],
+      "timestamp": ""
+    },
+    {
+      "pollId": 1,
+      "options": [
+        1
+      ],
+      "timestamp": ""
+    },
+    {
+      "pollId": 2,
+      "options": [
+        0,
+        3
+      ],
+      "timestamp": ""
+    }
+  ]
+}
