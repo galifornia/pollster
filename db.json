@@ -3,17 +3,16 @@
     {
       "id": 1,
       "name": "Fulano",
-      "votes": [
-        1,
-        2
-      ]
+      "votes": {
+        "1": "2"
+      }
     },
     {
       "id": 2,
       "name": "Mengano",
-      "votes": [
-        2
-      ]
+      "votes": {
+        "2": "1"
+      }
     },
     {
       "id": 3,
@@ -51,6 +50,7 @@
   ],
   "votes": [
     {
+      "id": 1,
       "pollId": 1,
       "options": [
         0,
@@ -59,6 +59,7 @@
       "timestamp": ""
     },
     {
+      "id": 2,
       "pollId": 1,
       "options": [
         1
@@ -66,6 +67,7 @@
       "timestamp": ""
     },
     {
+      "id": 3,
       "pollId": 2,
       "options": [
         0,

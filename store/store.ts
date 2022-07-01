@@ -1,10 +1,11 @@
 import create from 'zustand';
 import { devtools, persist } from 'zustand/middleware';
+import { Poll, User, Vote } from '../types/types';
 
 interface AppState {
   // user
-  loggedIn: boolean;
-  setLoggedIn: (newState: boolean) => void;
+  user: User | null;
+  setUser: (user: User) => void;
   // available for user polls
   polls: Poll[];
   fetchPolls: () => void;
@@ -13,17 +14,11 @@ interface AppState {
   fetchVotes: (pollId: string) => void;
 }
 
-type Vote = {
-  pollId: string;
-};
-
-type Poll = {};
-
 export const useStore = create<AppState>()(
   devtools(
     persist((set) => ({
-      loggedIn: false,
-      setLoggedIn: (isLogged) => set(() => ({ loggedIn: isLogged })),
+      user: null,
+      setUser: (user) => set(() => ({ user: user })),
       polls: [],
       fetchPolls: async () => {
         const response = await fetch('http://localhost:3003/polls');
