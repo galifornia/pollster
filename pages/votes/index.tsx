@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import { useStore } from '../../store/store';
 import { Vote } from '../../types/types';
@@ -24,6 +25,10 @@ const Votes = ({}: Props) => {
     <>
       <div className='text-2xl font-bold'>Votes Page</div>
       <p>{JSON.stringify(votes)}</p>
+
+      <Link href='/' className='my-2'>
+        <a>Go Home</a>
+      </Link>
     </>
   );
 };

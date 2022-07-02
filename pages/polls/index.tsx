@@ -1,4 +1,5 @@
 import { GetServerSidePropsContext } from 'next';
+import Link from 'next/link';
 import React from 'react';
 import { Poll } from '../../types/types';
 
@@ -13,6 +14,12 @@ const Polls = ({ polls }: Props) => {
     <>
       <div>Polls page</div>
       <p>{JSON.stringify(polls)}</p>
+
+      <div className='my-4 ml-2'>
+        <Link href='/'>
+          <a>Go Home</a>
+        </Link>
+      </div>
     </>
   );
 };
