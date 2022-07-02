@@ -3,6 +3,8 @@
     {
       "id": 1,
       "name": "Fulano",
+      "email": "user1@test.com",
+      "password": "1234",
       "votes": {
         "1": "2"
       }
@@ -10,12 +12,16 @@
     {
       "id": 2,
       "name": "Mengano",
+      "email": "user2@test.com",
+      "password": "1234",
       "votes": {
         "2": "1"
       }
     },
     {
       "id": 3,
+      "email": "user3@test.com",
+      "password": "1234",
       "name": "Fatima",
       "votes": []
     }

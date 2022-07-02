@@ -11,4 +11,6 @@ export type User = {
   name: string;
   id: string;
   votes: Record<string, string>; // voteId: pollId
+  email: string;
+  password: string;
 };
