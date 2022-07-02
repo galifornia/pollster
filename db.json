@@ -24,6 +24,13 @@
       "password": "1234",
       "name": "Fatima",
       "votes": []
+    },
+    {
+      "id": "4",
+      "name": "Marco Polo",
+      "email": "marco.polo@gmail.com",
+      "password": "1234",
+      "votes": {}
     }
   ],
   "polls": [
