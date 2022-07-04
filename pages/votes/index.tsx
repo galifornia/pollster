@@ -12,7 +12,6 @@ const Votes = ({}: Props) => {
 
   useEffect(() => {
     if (!user) return;
-    console.log({ user });
 
     fetch(`http://localhost:3003/votes`)
       .then((res) => res.json())
@@ -24,11 +23,22 @@ const Votes = ({}: Props) => {
   return (
     <>
       <div className='text-2xl font-bold'>Votes Page</div>
-      <p>{JSON.stringify(votes)}</p>
 
-      <Link href='/' className='my-2'>
-        <a>Go Home</a>
-      </Link>
+      <div className='my-4 grid grid-cols-[1fr_6fr_1fr]'>
+        {votes?.map((vote, i) => (
+          <div key={i} className=''>
+            <h4 className='font-bold text-2xl'>{vote.pollId}</h4>
+            <p className=''>{JSON.stringify(vote)}</p>
+            <button>Details</button>
+          </div>
+        ))}
+      </div>
+
+      <div className='flex justify-center items-center m-4'>
+        <Link href='/' className='my-2'>
+          <a>Go Home</a>
+        </Link>
+      </div>
     </>
   );
 };
