@@ -45,7 +45,8 @@
         false
       ],
       "name": "Quedada en Madrid",
-      "description": "En un lugar de la Mancha de cuyo nombre no quiero acordarme no ha mucho tiempo que vivía un hidalgo de los lanza en astillero, adarga antigua, rocín flaco y galgo corredor."
+      "description": "En un lugar de la Mancha de cuyo nombre no quiero acordarme no ha mucho tiempo que vivía un hidalgo de los lanza en astillero, adarga antigua, rocín flaco y galgo corredor.",
+      "options": []
     },
     {
       "id": 2,
@@ -58,14 +59,15 @@
         false
       ],
       "name": "Fin de semana",
-      "description": "En un lugar de la Mancha de cuyo nombre no quiero acordarme no ha mucho tiempo que vivía un hidalgo de los lanza en astillero, adarga antigua, rocín flaco y galgo corredor."
+      "description": "En un lugar de la Mancha de cuyo nombre no quiero acordarme no ha mucho tiempo que vivía un hidalgo de los lanza en astillero, adarga antigua, rocín flaco y galgo corredor.",
+      "options": []
     }
   ],
   "votes": [
     {
       "id": 1,
       "pollId": 1,
-      "options": [
+      "selection": [
         0,
         2
       ],
@@ -74,7 +76,7 @@
     {
       "id": 2,
       "pollId": 1,
-      "options": [
+      "selection": [
         1
       ],
       "timestamp": ""
@@ -82,7 +84,7 @@
     {
       "id": 3,
       "pollId": 2,
-      "options": [
+      "selection": [
         0,
         3
       ],

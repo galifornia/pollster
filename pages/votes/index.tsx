@@ -22,13 +22,13 @@ const Votes = ({}: Props) => {
 
   return (
     <>
-      <div className='text-2xl font-bold'>Votes Page</div>
+      <div className='text-2xl font-bold'>Past votes</div>
 
-      <div className='my-4 grid grid-cols-[1fr_6fr_1fr]'>
+      <div className='my-4 '>
         {votes?.map((vote, i) => (
-          <div key={i} className=''>
-            <h4 className='font-bold text-2xl'>{vote.pollId}</h4>
-            <p className=''>{JSON.stringify(vote)}</p>
+          <div key={i} className='w-full grid grid-cols-[1fr_6fr_1fr] gap-4'>
+            <p className=''>Poll name: {vote.pollId}</p>
+            <p className=''>Votes: {JSON.stringify(vote.selection)}</p>
             <button>Details</button>
           </div>
         ))}

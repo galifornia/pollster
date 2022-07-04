@@ -4,6 +4,7 @@ export type Poll = {
   description: string;
   participants: string[]; // userid[]
   status: boolean[]; // user status
+  options: number[];
 };
 
 export type Result = {};
@@ -11,6 +12,7 @@ export type Result = {};
 export type Vote = {
   id: string;
   pollId: string;
+  selection: number[];
 };
 
 export type User = {

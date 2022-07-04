@@ -10,7 +10,7 @@ const LogIn = () => {
   const router = useRouter();
   const setUser = useStore((state) => state.setUser);
   const [users, setUsers] = useState<User[]>();
-  const email = 'marco.polo@gmail.com';
+  const email = 'user1@test.com';
   const password = '1234';
 
   useEffect(() => {
