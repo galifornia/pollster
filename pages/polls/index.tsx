@@ -12,10 +12,28 @@ type Props = {
 const Polls = ({ polls }: Props) => {
   return (
     <>
-      <div>Polls page</div>
-      <p>{JSON.stringify(polls)}</p>
+      <div className='font-bold text-3xl text-center'>All Polls</div>
 
-      <div className='my-4 ml-2'>
+      <div className='flex flex-col'>
+        {polls.map((poll, i) => {
+          return (
+            <div
+              className='grid grid-cols-[1fr_6fr_1fr] items-center gap-4 my-4 first:mt-10'
+              key={i}
+            >
+              <h4>{poll.name}</h4>
+              <p className='max-w-[70%]'>{poll.description}</p>
+
+              <div className='flex gap-4'>
+                <button>Details</button>
+                <button>See results</button>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+
+      <div className='my-4 flex justify-center items-center'>
         <Link href='/'>
           <a>Go Home</a>
         </Link>

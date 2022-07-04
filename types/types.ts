@@ -1,4 +1,10 @@
-export type Poll = { id: string };
+export type Poll = {
+  id: string;
+  name: string;
+  description: string;
+  participants: string[]; // userid[]
+  status: boolean[]; // user status
+};
 
 export type Result = {};
 
